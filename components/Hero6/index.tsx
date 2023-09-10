@@ -3,7 +3,7 @@ const Hero6 = () => {
     <>
       <section
         id="cta"
-        className="relative z-10 overflow-hidden border-b-[1px] border-[#D4D4D4] bg-white px-[60px] pb-[65px] pt-[42px] text-[#000000] lg:pb-[129px] lg:pt-[84px]"
+        className="relative z-10 overflow-hidden border-b-[1px] border-[#D4D4D4] bg-white px-[40px] pb-[65px] pt-[42px] text-[#000000] lg:pb-[129px] lg:pt-[84px]"
       >
         <div className="mx-auto">
           <div className="flex justify-center text-center  text-[32px] font-bold -tracking-[2%] lg:text-[48px] lg:!leading-[77px] xl:text-[64px]">
