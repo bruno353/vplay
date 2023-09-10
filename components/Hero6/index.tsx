@@ -14,7 +14,7 @@ const Hero6 = () => {
             and Web3 infrastructure, we invite you to apply to become our
             official OpenMesh Expert
           </div>
-          <div className="mx-auto mt-[52px] max-w-[1200px] bg-yellow md:mt-[104px] md:flex">
+          <div className="mx-auto mt-[52px] max-w-[1200px] md:mt-[104px] md:flex">
             <div className="flex-1 md:mr-[70px]  lg:mr-[60px]">
               <img
                 src={`${
