@@ -4,7 +4,7 @@ export default function Head() {
       <title>Openmesh Expert</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Openmesh Expert" />
-      <link rel="icon" href="/openmesh-logo.ico" />
+      <link rel="icon" href="/openmesh-ico-logo.png" />
     </>
   )
 }
