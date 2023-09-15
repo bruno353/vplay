@@ -24,10 +24,8 @@ const Hero = () => {
           </div>
           <div className="mt-[32px] flex justify-center text-center lg:mt-[62px]">
             <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={`https://calendly.com/`}
-              className="cursor-pointer rounded-[5px] border  border-[#000] bg-transparent px-[18px] py-[9.5px] text-[11px] font-bold text-[#575757] hover:bg-[#ececec] lg:py-[11.5px] lg:px-[35px] lg:!leading-[19px] xl:text-[16px]"
+              href={`https://openmesh-expert-frontend.vercel.app/`}
+              className="flex cursor-pointer items-center rounded-[5px] border border-[#0354EC] bg-transparent  py-[9px] px-[18px] text-[14px] font-bold !leading-[19px] text-[#0354EC] hover:bg-[#0354EC] hover:text-[#fff] 2xl:py-[11.5px] 2xl:px-[24px] 2xl:text-[16px]"
             >
               Become an expert
             </a>
