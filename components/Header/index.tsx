@@ -145,7 +145,7 @@ const Header = () => {
                   Become an expert
                 </a>
               </div>
-{/* 
+              {/* 
               {user?.sessionToken ? (
                 <div className="mt-[30px]">
                   <div className="mx-auto flex w-3/4 justify-center border-b border-[#000]">
