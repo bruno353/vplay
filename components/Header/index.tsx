@@ -139,7 +139,7 @@ const Header = () => {
               <div>
                 {' '}
                 <a
-                  href={`https://openmesh-expert-frontend.vercel.app/`}
+                  href={`https://openmesh-expert-community.vercel.app/register`}
                   className=" cursor-pointer items-center rounded-[5px] border border-[#0354EC] bg-transparent py-[9px] px-[18px] text-[13px] font-bold !leading-[19px] text-[#0354EC] hover:bg-[#0354EC] hover:text-[#fff]"
                 >
                   Become an expert
@@ -251,7 +251,7 @@ const Header = () => {
           </div>
           <div className={` flex justify-between `}>
             <a
-              href={`https://openmesh-expert-frontend.vercel.app/`}
+              href={`https://openmesh-expert-community.vercel.app/register`}
               className="flex cursor-pointer items-center rounded-[5px] border border-[#0354EC] bg-transparent  py-[9px] px-[18px] text-[14px] font-bold !leading-[19px] text-[#0354EC] hover:bg-[#0354EC] hover:text-[#fff] 2xl:py-[11.5px] 2xl:px-[24px] 2xl:text-[16px]"
             >
               Become an expert
