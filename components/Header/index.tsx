@@ -1,15 +1,18 @@
 /* eslint-disable no-unused-vars */
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import ThemeToggler from './ThemeToggler'
 import menuData from './menuData'
-import { List } from 'phosphor-react'
+import { UserCircle } from 'phosphor-react'
 import * as Dialog from '@radix-ui/react-dialog'
+import axios from 'axios'
 
 const Header = () => {
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const [userNavbarOpen, setUserNavbarOpen] = useState(false)
+  const [userConnected, setUserConnected] = useState()
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen)
   }
@@ -45,7 +48,7 @@ const Header = () => {
     { label: 'About', isCurrentlyPage: false, href: '/' },
     {
       label: 'Expert community',
-      isCurrentlyPage: false,
+      isCurrentlyPage: true,
       href: 'https://openmesh-expert-community.vercel.app/',
     },
     {
@@ -75,7 +78,7 @@ const Header = () => {
         </div>
       </Link> */}
       <header className="max-w-screen top-0 left-0 z-40 mx-0 flex h-[95px] w-full  items-center bg-[#F9F9F9]  bg-opacity-80 text-[#000000]">
-        <div className="w-full justify-between px-[20px] xl:hidden">
+        <div className="w-full justify-between px-[20px] md:px-[90px] xl:hidden">
           <div className="">
             <img
               src={`${
@@ -91,7 +94,7 @@ const Header = () => {
             onClick={navbarToggleHandler}
             id="navbarToggler"
             aria-label="Mobile Menu"
-            className="absolute right-0 top-7 block  rounded-lg px-3 py-[6px] ring-primary focus:ring-2"
+            className="absolute right-7 top-7 block  rounded-lg px-3 py-[6px] ring-primary focus:ring-2"
           >
             <span
               className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300  ${
@@ -111,7 +114,7 @@ const Header = () => {
           </button>
           <nav
             id="navbarCollapse"
-            className={`navbar absolute right-0 z-50 w-[250px] rounded border-[.5px] bg-[#e6e4e4] py-6  px-6 text-[13px] text-[#fff] duration-300  ${
+            className={`navbar absolute right-7 z-50 w-[250px] rounded border-[.5px] bg-[#e6e4e4] py-6  px-6 text-[13px] text-[#fff] duration-300  ${
               navbarOpen
                 ? 'visibility top-20 opacity-100'
                 : 'invisible top-20 opacity-0'
@@ -133,24 +136,90 @@ const Header = () => {
               ))}
             </div>
             <div className="mt-[35px]">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`/`}
-                className=" cursor-pointer items-center rounded-[5px] border  border-[#000] bg-transparent py-[11.5px] px-[18px] text-[13px] font-bold !leading-[19px] text-[#575757] hover:bg-[#ececec]"
-              >
-                Become an expert
-              </a>
-              {/* <div className="mt-[25px]">
+              <div>
+                {' '}
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={`/`}
-                  className=" cursor-pointer items-center bg-transparent text-[13px]  font-bold !leading-[19px] text-[#000] hover:text-[#3b3a3a]"
+                  href={`https://openmesh-expert-frontend.vercel.app/`}
+                  className=" cursor-pointer items-center rounded-[5px] border border-[#0354EC] bg-transparent py-[9px] px-[18px] text-[13px] font-bold !leading-[19px] text-[#0354EC] hover:bg-[#0354EC] hover:text-[#fff]"
                 >
-                  Login
+                  Become an expert
                 </a>
-              </div> */}
+              </div>
+{/* 
+              {user?.sessionToken ? (
+                <div className="mt-[30px]">
+                  <div className="mx-auto flex w-3/4 justify-center border-b border-[#000]">
+                    {' '}
+                  </div>
+                  <div className="flex">
+                    {' '}
+                    <img
+                      src={
+                        !user.profilePictureHash
+                          ? `${
+                              process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                                ? process.env.NEXT_PUBLIC_BASE_PATH
+                                : ''
+                            }/images/header/user-circle.svg`
+                          : `https://cloudflare-ipfs.com/ipfs/${user.profilePictureHash}`
+                      }
+                      alt="image"
+                      onClick={() => {
+                        setUserNavbarOpen(!userNavbarOpen)
+                      }}
+                      className={`mr-[15px] mt-[25px] h-[50px] w-[50px] cursor-pointer rounded-[100%] 2xl:mr-[15px]`}
+                    />
+                    <div className="mt-[30px] h-fit py-0 text-[12px] font-medium !leading-[19px]">
+                      <div className=" flex items-center">
+                        <a
+                          href={`${
+                            process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                              ? 'https://openmesh-expert-community.vercel.app/my-account'
+                              : '/my-account'
+                          }`}
+                          className={`flex cursor-pointer items-center text-[#000]   hover:text-[#313131]`}
+                        >
+                          My account
+                        </a>
+                      </div>
+                      <div className="mt-[5px] flex items-center">
+                        <a
+                          href={`${
+                            process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                              ? 'https://openmesh-expert-community.vercel.app/change-password'
+                              : '/change-password'
+                          }`}
+                          className={`flex cursor-pointer items-center text-[#000]  hover:text-[#313131]`}
+                        >
+                          Change password
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-[25px]">
+                    <a
+                      onClick={signOutUser}
+                      className=" cursor-pointer items-center rounded-[5px] border  border-[#000] bg-transparent py-[6px] px-[18px] text-[12px] font-bold !leading-[19px] text-[#575757] hover:bg-[#ececec]"
+                    >
+                      Sign out
+                    </a>
+                  </div>
+                </div>
+              ) : (
+                <div className="mt-[25px]">
+                  <a
+                    href={`${
+                      process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                        ? 'https://openmesh-expert-community.vercel.app/login'
+                        : '/login'
+                    }`}
+                    className=" cursor-pointer items-center bg-transparent text-[13px]  font-bold !leading-[19px] text-[#000] hover:text-[#3b3a3a]"
+                  >
+                    Login
+                  </a>
+                </div>
+              )} */}
             </div>
           </nav>
         </div>
@@ -165,11 +234,11 @@ const Header = () => {
               alt="image"
               className={`mr-[60px]`}
             />
-            <div className="flex h-full items-center gap-x-[20px] text-[16px] font-medium !leading-[19px]">
+            <div className="flex h-full items-center gap-x-[15px] text-[14px] font-medium !leading-[19px] 2xl:gap-x-[20px] 2xl:text-[16px]">
               {features.map((feature, index) => (
                 <div className="flex h-full items-center" key={index}>
                   <a
-                    className={`flex h-full cursor-pointer  items-center px-[30px] hover:bg-[#ececec] ${
+                    className={`flex h-full cursor-pointer  items-center px-[15px] hover:bg-[#ececec] 2xl:px-[30px] ${
                       feature.isCurrentlyPage ? 'bg-[#ececec] font-bold' : ''
                     }`}
                     href={feature.href}
@@ -180,23 +249,96 @@ const Header = () => {
               ))}
             </div>
           </div>
-          <div className=" flex justify-between gap-x-[80px]">
+          <div className={` flex justify-between `}>
             <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={`/`}
-              className="flex cursor-pointer items-center rounded-[5px] border  border-[#000] bg-transparent py-[11.5px] px-[24px] text-[16px] font-bold !leading-[19px] text-[#575757] hover:bg-[#ececec]"
+              href={`https://openmesh-expert-frontend.vercel.app/`}
+              className="flex cursor-pointer items-center rounded-[5px] border border-[#0354EC] bg-transparent  py-[9px] px-[18px] text-[14px] font-bold !leading-[19px] text-[#0354EC] hover:bg-[#0354EC] hover:text-[#fff] 2xl:py-[11.5px] 2xl:px-[24px] 2xl:text-[16px]"
             >
               Become an expert
             </a>
-            {/* <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={`/`}
-              className=" my-auto h-fit cursor-pointer items-center   border-b  border-[#000] bg-transparent text-[16px]  font-bold !leading-[19px] text-[#000] hover:text-[#3b3a3a]"
-            >
-              Login
-            </a> */}
+            {/* {user?.sessionToken ? (
+              <div>
+                <img
+                  src={
+                    !user.profilePictureHash
+                      ? `${
+                          process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                            ? process.env.NEXT_PUBLIC_BASE_PATH
+                            : ''
+                        }/images/header/user-circle.svg`
+                      : `https://cloudflare-ipfs.com/ipfs/${user.profilePictureHash}`
+                  }
+                  alt="image"
+                  onClick={() => {
+                    setUserNavbarOpen(!userNavbarOpen)
+                  }}
+                  className={`mr-[15px] h-[50px] w-[50px] cursor-pointer rounded-[100%] 2xl:mr-[15px]`}
+                />
+                <nav
+                  className={`navbar absolute right-[100px] z-50 flex w-[220px] rounded-[8px] border-[.5px] bg-[#e6e4e4] pt-[19px] pr-6 pl-[35px] pb-[30px] text-[13px] text-[#fff] duration-300  ${
+                    userNavbarOpen
+                      ? 'visibility top-20 opacity-100'
+                      : 'invisible top-20 opacity-0'
+                  }`}
+                >
+                  <div className="mt-[10px]">
+                    <div className=" grid gap-y-[15px] text-[15px]  font-medium !leading-[19px]">
+                      <div className="flex h-full items-center">
+                        <a
+                          href={`${
+                            process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                              ? 'https://openmesh-expert-community.vercel.app/my-account'
+                              : '/my-account'
+                          }`}
+                          className={`flex h-full cursor-pointer items-center text-[#000]  hover:text-[#313131]`}
+                        >
+                          My account
+                        </a>
+                      </div>
+                      <div className="flex h-full items-center">
+                        <a
+                          href={`${
+                            process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                              ? 'https://openmesh-expert-community.vercel.app/change-password'
+                              : '/change-password'
+                          }`}
+                          className={`flex h-full cursor-pointer items-center text-[#000]  hover:text-[#313131]`}
+                        >
+                          Change password
+                        </a>
+                      </div>
+                    </div>
+                    <div className="mt-[25px]">
+                      <a
+                        onClick={signOutUser}
+                        className=" cursor-pointer items-center rounded-[5px] border  border-[#000] bg-transparent py-[6px] px-[18px] text-[12px] font-bold !leading-[19px] text-[#575757] hover:bg-[#ececec]"
+                      >
+                        Sign out
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    onClick={() => {
+                      setUserNavbarOpen(false)
+                    }}
+                    className="ml-[20px]  flex cursor-pointer justify-end text-[16px] font-bold text-[#000] hover:text-[#313131]"
+                  >
+                    x
+                  </div>
+                </nav>
+              </div>
+            ) : (
+              <a
+                href={`${
+                  process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                    ? 'https://openmesh-expert-community.vercel.app/login'
+                    : '/login'
+                }`}
+                className=" my-auto h-fit cursor-pointer items-center   border-b  border-[#000] bg-transparent text-[16px]  font-bold !leading-[19px] text-[#000] hover:text-[#3b3a3a]"
+              >
+                Login
+              </a>
+            )} */}
           </div>
           {/* <div className="lg:hidden">
               <Dialog.Root>
