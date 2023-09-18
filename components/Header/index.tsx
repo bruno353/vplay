@@ -226,11 +226,11 @@ const Header = () => {
               alt="image"
               className={`mr-[60px]`}
             />
-            <div className="flex h-full items-center gap-x-[15px] text-[14px] font-medium !leading-[19px] 2xl:gap-x-[20px] 2xl:text-[16px]">
+            <div className="flex h-full items-center gap-x-[1px] text-[14px] font-medium !leading-[19px] 2xl:gap-x-[20px] 2xl:text-[16px]">
               {features.map((feature, index) => (
                 <div className="flex h-full items-center" key={index}>
                   <a
-                    className={`flex h-full cursor-pointer  items-center px-[15px] hover:bg-[#ececec] 2xl:px-[30px] ${
+                    className={`flex h-full cursor-pointer  items-center px-[25px] hover:bg-[#ececec] 2xl:px-[45px] ${
                       feature.isCurrentlyPage ? 'bg-[#ececec] font-bold' : ''
                     }`}
                     href={feature.href}
