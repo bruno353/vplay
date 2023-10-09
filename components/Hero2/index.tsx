@@ -16,7 +16,35 @@ const Hero2 = () => {
           </div>
           <div className="mx-auto mt-[45px] items-center justify-center md:grid md:grid-cols-3 md:gap-x-[60px] lg:mt-[91px]">
             <div className="lg:w-[294px]">
-              <div className="h-[170px] w-[145px] rounded-[10px]  bg-[#F3F3F3] lg:h-[342px] lg:w-[294px]"></div>
+              <div className="">
+                <img
+                  src={`${
+                    process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                      ? process.env.NEXT_PUBLIC_BASE_PATH
+                      : ''
+                  }/images/techs/xnode-logo.png`}
+                  alt="image"
+                  className={`mx-auto w-[110px]`}
+                />
+                <div className="justify-center text-center font-bold text-[#4A87FF]">
+                  Decentralized Infrastructure
+                </div>
+                <div className="justify-center text-center text-[#4A87FF]">
+                  (as a service)
+                </div>
+                <div className="mx-auto mt-[10px] max-w-[200px] justify-center text-center text-[10px] font-bold !leading-[20px] lg:mt-[20px] lg:text-[14px] xl:text-[20px]">
+                  All-in-one decentralized data infrastructure.
+                </div>
+                <img
+                  src={`${
+                    process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                      ? process.env.NEXT_PUBLIC_BASE_PATH
+                      : ''
+                  }/images/techs/xnode.png`}
+                  alt="image"
+                  className={`mt-[10px] w-full`}
+                />
+              </div>
               <div className="mt-[10px] text-[16px] font-bold lg:mt-[20px] lg:text-[23px] lg:!leading-[150%] xl:text-[32px]">
                 xNode <span className="font-medium text-[#959595]">(IaaS)</span>
               </div>
@@ -36,7 +64,35 @@ const Hero2 = () => {
               </div>
             </div>
             <div className="mt-[45px] md:mt-0 lg:w-[294px]">
-              <div className="h-[170px] w-[145px] rounded-[10px]  bg-[#F3F3F3] lg:h-[342px] lg:w-[294px]"></div>
+              <div className="">
+                <img
+                  src={`${
+                    process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                      ? process.env.NEXT_PUBLIC_BASE_PATH
+                      : ''
+                  }/images/techs/unifiedAPI-logo.png`}
+                  alt="image"
+                  className={`mx-auto w-[150px]`}
+                />
+                <div className="justify-center text-center font-bold text-[#4A87FF]">
+                  Decentralized plataform
+                </div>
+                <div className="justify-center text-center text-[#4A87FF]">
+                  (as a service)
+                </div>
+                <div className="mx-auto mt-[10px] max-w-[250px] justify-center text-center text-[10px] font-bold !leading-[20px] lg:mt-[20px] lg:text-[14px] xl:text-[20px]">
+                  Single endpoint for all crypto & web3 data, free forever.
+                </div>
+                <img
+                  src={`${
+                    process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                      ? process.env.NEXT_PUBLIC_BASE_PATH
+                      : ''
+                  }/images/techs/unifiedAPI.svg`}
+                  alt="image"
+                  className={`mx-auto  w-[200px]`}
+                />
+              </div>
               <div className="mt-[10px] text-[16px] font-bold lg:mt-[20px] lg:text-[23px] lg:!leading-[150%] xl:text-[32px]">
                 UnifiedAPI{' '}
                 <span className="font-medium text-[#959595]">(PaaS)</span>
@@ -57,8 +113,37 @@ const Hero2 = () => {
               </div>
             </div>
             <div className="mt-[45px] md:mt-0 lg:w-[294px]">
-              <div className="h-[170px] w-[145px] rounded-[10px]  bg-[#F3F3F3] lg:h-[342px] lg:w-[294px]"></div>
-              <div className="mt-[10px] text-[16px] font-bold lg:mt-[20px] lg:text-[23px] lg:!leading-[150%] xl:text-[32px]">
+              <div className="h-full">
+                <img
+                  src={`${
+                    process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                      ? process.env.NEXT_PUBLIC_BASE_PATH
+                      : ''
+                  }/images/techs/pythia-logo.svg`}
+                  alt="image"
+                  className={`mx-auto w-[100px]`}
+                />
+                <div className="justify-center text-center font-bold text-[#4A87FF]">
+                  Decentralized dApps
+                </div>
+                <div className="justify-center text-center text-[#4A87FF]">
+                  (as a service)
+                </div>
+                <div className="mx-auto mt-[10px] max-w-[250px] justify-center text-center text-[10px] font-bold !leading-[20px] lg:mt-[20px] lg:text-[14px] xl:text-[20px]">
+                  Design, build, visualize, deploy powerful and web3 data
+                  products
+                </div>
+                <img
+                  src={`${
+                    process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                      ? process.env.NEXT_PUBLIC_BASE_PATH
+                      : ''
+                  }/images/techs/pythia-dash.png`}
+                  alt="image"
+                  className={`mx-auto  mt-[10px] w-[400px]`}
+                />
+              </div>
+              <div className="mt-[10px] text-[16px] font-bold lg:mt-[110px] lg:text-[23px] lg:!leading-[150%] xl:text-[32px]">
                 Pythia{' '}
                 <span className="font-medium text-[#959595]">(SaaS)</span>
               </div>
