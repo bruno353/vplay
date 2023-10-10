@@ -17,7 +17,15 @@ const Hero5 = () => {
           <div className="mt-[40px] justify-center lg:mt-[9px] lg:flex">
             <div className="border-[#D4D4D4] lg:border-r-[1px] lg:px-[72px] lg:py-[64px]">
               <div className="lg:w-[350px] xl:w-[400px]">
-                <div className="h-[100px] w-[200px] rounded-[10px] bg-[#F3F3F3] xl:h-[200px] xl:w-[375px]"></div>
+                <img
+                  src={`${
+                    process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                      ? process.env.NEXT_PUBLIC_BASE_PATH
+                      : ''
+                  }/images/new/requiremente.png`}
+                  alt="image"
+                  className={`rounded-[5px]`}
+                />
                 <div className="mt-[10px] text-[18px] font-bold !leading-[150%] lg:mt-[20px] lg:text-[22px] xl:text-[32px]">
                   Requirement
                 </div>
@@ -42,7 +50,15 @@ const Hero5 = () => {
                 </ul>
               </div>
               <div className="mt-[60px] lg:mt-[802px] lg:w-[350px] xl:w-[400px]">
-                <div className="h-[100px] w-[200px] rounded-[10px] bg-[#F3F3F3] xl:h-[200px] xl:w-[375px]"></div>
+                <img
+                  src={`${
+                    process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                      ? process.env.NEXT_PUBLIC_BASE_PATH
+                      : ''
+                  }/images/new/assessment.png`}
+                  alt="image"
+                  className={`rounded-[5px]`}
+                />
                 <div className="mt-[10px] text-[18px] font-bold !leading-[150%] lg:mt-[20px] lg:text-[22px] xl:text-[32px]">
                   Assessment
                 </div>
@@ -63,7 +79,15 @@ const Hero5 = () => {
             </div>
             <div className="lg:px-[72px] lg:pt-[743px]">
               <div className="mt-[60px] lg:mt-0 xl:w-[400px]">
-                <div className="h-[100px] w-[200px] rounded-[10px] bg-[#F3F3F3] xl:h-[200px] xl:w-[375px]"></div>
+                <img
+                  src={`${
+                    process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
+                      ? process.env.NEXT_PUBLIC_BASE_PATH
+                      : ''
+                  }/images/new/learning-path.png`}
+                  alt="image"
+                  className={`rounded-[5px]`}
+                />
                 <div className="mt-[10px] text-[18px] font-bold !leading-[150%] lg:mt-[20px] lg:text-[22px] xl:text-[32px]">
                   Learning Path
                 </div>
