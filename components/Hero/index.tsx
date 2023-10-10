@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="mt-[32px] flex justify-center text-center lg:mt-[62px]">
               <a
                 href={`https://calendly.com/openmesh/30min`}
-                className="flex cursor-pointer items-center rounded-[5px] bg-[#0354EC] py-[9px] px-[18px] text-[14px] font-bold !leading-[19px] text-[#fff] hover:border hover:border-[#0354EC] hover:bg-[#fff] hover:text-[#0354EC] 2xl:py-[11.5px] 2xl:px-[24px] 2xl:text-[16px]"
+                className="flex cursor-pointer items-center rounded-[5px] border border-[#0354EC] bg-transparent py-[9px] px-[18px] text-[14px] font-bold !leading-[19px]  text-[#0354EC] hover:border hover:border-[#0354EC] hover:bg-[#0354EC] hover:text-[#fff] 2xl:py-[11.5px] 2xl:px-[24px] 2xl:text-[16px]"
               >
                 Schedule a 15-minute call to learn more
               </a>
