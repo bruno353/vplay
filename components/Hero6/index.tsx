@@ -41,7 +41,7 @@ const Hero6 = () => {
                 className={`mt-[30px] w-full  md:mt-0`}
               />
               <div className="mx-auto mt-[16px] flex w-[240px] justify-center text-[14px] font-bold lg:mt-[33px] lg:w-fit lg:text-[19px] lg:!leading-[150%] xl:text-[28px]">
-                Blockchain Consulting Team
+                Team / Company
               </div>
             </div>
           </div>
