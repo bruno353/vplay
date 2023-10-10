@@ -129,9 +129,9 @@ const Hero5 = () => {
       </div>
       <section
         id="stories"
-        className="relative z-10 overflow-hidden bg-[#F3F3F3] px-[20px] pt-[103px] pb-[75px] text-[#000000] lg:pb-[143px]"
+        className="relative z-10 overflow-hidden bg-[#fff] px-[20px] pt-[103px] pb-[25px] text-[#000000] lg:pb-[23px]"
       >
-        <div className="mx-auto xl:w-[1200px]">
+        {/* <div className="mx-auto xl:w-[1200px]">
           <div className="flex justify-center text-[32px] font-bold lg:text-[48px] lg:!leading-[77px]  xl:text-[64px]">
             Success Stories
           </div>
@@ -178,7 +178,7 @@ const Hero5 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   )
