@@ -22,13 +22,23 @@ const Hero = () => {
             Become a certified OpenMesh Expert to help businesses in
             implementing blockchain data solutions
           </div>
-          <div className="mt-[32px] flex justify-center text-center lg:mt-[62px]">
-            <a
-              href={`${process.env.NEXT_PUBLIC_BASE_URL}/community/register`}
-              className="flex cursor-pointer items-center rounded-[5px] bg-[#0354EC] py-[9px] px-[18px] text-[14px] font-bold !leading-[19px] text-[#fff] hover:border hover:border-[#0354EC] hover:bg-[#fff] hover:text-[#0354EC] 2xl:py-[11.5px] 2xl:px-[24px] 2xl:text-[16px]"
-            >
-              Become an expert
-            </a>
+          <div className="flex justify-center gap-x-[15px] md:gap-x-[18px] lg:gap-x-[21px] xl:gap-x-[24px] 2xl:gap-x-[30px]">
+            <div className="mt-[32px] flex justify-center text-center lg:mt-[62px]">
+              <a
+                href={`${process.env.NEXT_PUBLIC_BASE_URL}/community/register`}
+                className="flex cursor-pointer items-center rounded-[5px] bg-[#0354EC] py-[9px] px-[18px] text-[14px] font-bold !leading-[19px] text-[#fff] hover:border hover:border-[#0354EC] hover:bg-[#fff] hover:text-[#0354EC] 2xl:py-[11.5px] 2xl:px-[24px] 2xl:text-[16px]"
+              >
+                Apply to become an expert
+              </a>
+            </div>
+            <div className="mt-[32px] flex justify-center text-center lg:mt-[62px]">
+              <a
+                href={`https://calendly.com/openmesh/30min`}
+                className="flex cursor-pointer items-center rounded-[5px] bg-[#0354EC] py-[9px] px-[18px] text-[14px] font-bold !leading-[19px] text-[#fff] hover:border hover:border-[#0354EC] hover:bg-[#fff] hover:text-[#0354EC] 2xl:py-[11.5px] 2xl:px-[24px] 2xl:text-[16px]"
+              >
+                Schedule a 15-minute call to learn more
+              </a>
+            </div>
           </div>
         </div>
         <div className="mx-auto mt-[200px] lg:flex lg:w-[800px] lg:justify-between xl:mt-[400px] xl:w-[1177px]">
