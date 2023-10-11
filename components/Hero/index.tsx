@@ -16,10 +16,10 @@ const Hero = () => {
             className={`absolute -top-[150px] right-[20px]  z-[-1] md:-top-[500px] lg:-top-[550px]  xl:-top-[1000px] xl:right-[200px] `}
           />
           <div className="flex justify-center text-center text-[32px] font-bold lg:text-[48px] lg:!leading-[77px] xl:text-[64px]">
-            OpenMesh Expert Network
+            Openmesh Expert Network
           </div>
           <div className="mt-[15px] flex justify-center text-center text-[18px] font-medium lg:mt-[30px] lg:text-[24px] lg:!leading-[44px] xl:text-[36px]">
-            Become a certified OpenMesh Expert to help businesses in
+            Become a certified Openmesh Expert to help businesses in
             implementing blockchain data solutions
           </div>
           <div className="flex justify-center gap-x-[15px] md:gap-x-[18px] lg:gap-x-[21px] xl:gap-x-[24px] 2xl:gap-x-[30px]">

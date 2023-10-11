@@ -120,7 +120,7 @@ const Hero4 = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={`${process.env.NEXT_PUBLIC_BASE_URL}`}
+            href={`https://odi.openmesh.network/`}
             className="min-w-[231px] cursor-pointer rounded-[5px] bg-[#fff] py-[12px] px-[12px] text-[12px] font-bold !leading-[19px] text-[#000] hover:bg-[#d8d7d7] lg:py-[16px] lg:px-[16.5px] lg:text-[12px] xl:text-[16px]"
           >
             Go to Conference Page

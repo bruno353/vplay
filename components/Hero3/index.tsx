@@ -19,14 +19,15 @@ const Hero3 = () => {
               className={`absolute top-0 left-[2px] right-0 z-[-1] m-auto w-[380px] lg:min-w-[550px] xl:min-w-[730px]`}
             />
             <div className="mt-[120px] hidden justify-center text-[32px] font-bold tracking-[2.2%] md:flex md:text-[33px] lg:mt-0 lg:text-[48px] xl:text-[64px]">
-              Becomin
-              <span className="mr-[14px] text-white">
-                g an Openmesh Expert
+              Joining{' '}
+              <span className="mr-[14px] ml-[5px] text-white">
+                {' '}
+                the Openmesh Expert
               </span>{' '}
               Network
             </div>
             <div className="mt-[120px] justify-center text-[20px] font-bold tracking-[2.2%] text-white md:hidden lg:text-[64px]">
-              Becoming an Openmesh Expert Network
+              Joining the Openmesh Expert Network
             </div>
           </div>
           <div className="mx-auto mt-[100px] items-start justify-center md:mt-[150px] md:grid md:grid-cols-3 md:gap-x-[90px] md:gap-y-[50px] lg:mt-[301px] lg:gap-y-[100px] xl:w-[1250px] xl:gap-x-[120px] xl:gap-y-[146px]">
