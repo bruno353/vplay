@@ -36,7 +36,7 @@ const Header = () => {
     {
       label: 'About',
       isCurrentlyPage: false,
-      href: `${process.env.NEXT_PUBLIC_BASE_URL}/about`,
+      href: `${process.env.NEXT_PUBLIC_BASE_URL}/oen/about`,
     },
     {
       label: 'Expert community',
