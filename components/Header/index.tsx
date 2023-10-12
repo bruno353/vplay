@@ -41,7 +41,7 @@ const Header = () => {
     {
       label: 'Expert community',
       isCurrentlyPage: false,
-      href: `${process.env.NEXT_PUBLIC_BASE_URL}/community`,
+      href: `${process.env.NEXT_PUBLIC_BASE_URL}/oec`,
     },
     // {
     //   label: 'Academy',
@@ -56,7 +56,7 @@ const Header = () => {
     {
       label: 'FAQs',
       isCurrentlyPage: false,
-      href: `${process.env.NEXT_PUBLIC_BASE_URL}/community/faqs`,
+      href: `${process.env.NEXT_PUBLIC_BASE_URL}/oec/faqs`,
     },
   ]
 
@@ -131,7 +131,7 @@ const Header = () => {
               <div>
                 {' '}
                 <a
-                  href={`/community/register`}
+                  href={`/oec/register`}
                   className=" cursor-pointer items-center rounded-[5px] border border-[#0354EC] bg-transparent py-[9px] px-[18px] text-[13px] font-bold !leading-[19px] text-[#0354EC] hover:bg-[#0354EC] hover:text-[#fff]"
                 >
                   Become an expert
@@ -243,7 +243,7 @@ const Header = () => {
           </div>
           <div className={` flex justify-between `}>
             <a
-              href={`/community/register`}
+              href={`/oec/register`}
               className="flex cursor-pointer items-center rounded-[5px] border border-[#0354EC] bg-transparent  py-[9px] px-[18px] text-[14px] font-bold !leading-[19px] text-[#0354EC] hover:bg-[#0354EC] hover:text-[#fff] 2xl:py-[11.5px] 2xl:px-[24px] 2xl:text-[16px]"
             >
               Become an expert

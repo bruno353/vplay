@@ -47,7 +47,7 @@ const Hero6 = () => {
           </div>
           <div className="mt-[32px] flex justify-center text-center lg:mt-[62px]">
             <a
-              href={`${process.env.NEXT_PUBLIC_BASE_URL}/community/register`}
+              href={`${process.env.NEXT_PUBLIC_BASE_URL}/oec/register`}
               className="cursor-pointer rounded-[5px] border  border-[#000] bg-transparent px-[18px] py-[9.5px] text-[11px] font-bold text-[#575757] hover:bg-[#ececec] lg:py-[11.5px] lg:px-[35px] lg:!leading-[19px] xl:text-[16px]"
             >
               Become an expert
