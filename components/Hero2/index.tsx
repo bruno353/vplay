@@ -56,7 +56,7 @@ const Hero2 = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={`https://www.openmesh.network/academy`}
+                  href={`https://www.openmesh.network/academy#xnode`}
                   className="cursor-pointer rounded-[5px] bg-[#0354EC] px-[18px] py-[9.5px]  text-[10px] font-bold text-white hover:bg-[#0447c5] lg:py-[11.5px] lg:px-[35px] lg:text-[12px] lg:!leading-[19px] xl:text-[16px]"
                 >
                   Read More
@@ -105,7 +105,7 @@ const Hero2 = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={`https://www.openmesh.network/academy`}
+                  href={`https://www.openmesh.network/academy#unified`}
                   className="cursor-pointer rounded-[5px] bg-[#0354EC] px-[18px] py-[9.5px]  text-[10px] font-bold text-white hover:bg-[#0447c5] lg:py-[11.5px] lg:px-[35px] lg:text-[12px] lg:!leading-[19px] xl:text-[16px]"
                 >
                   Read More
@@ -155,7 +155,7 @@ const Hero2 = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={`https://www.openmesh.network/academy`}
+                  href={`https://www.openmesh.network/academy#pythia`}
                   className="cursor-pointer rounded-[5px] bg-[#0354EC] px-[18px] py-[9.5px]  text-[10px] font-bold text-white hover:bg-[#0447c5] lg:py-[11.5px] lg:px-[35px] lg:text-[14px] lg:!leading-[19px] xl:text-[16px]"
                 >
                   Read More
