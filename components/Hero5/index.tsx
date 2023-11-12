@@ -5,7 +5,7 @@ const Hero5 = () => {
     <>
       <section
         id="learning"
-        className="relative z-10 overflow-hidden bg-white px-[20px] pb-[180px] pt-[45px] text-[#000000] lg:pb-[200px] lg:pt-[90px]"
+        className="relative z-10 overflow-hidden bg-white px-[20px] pb-[50px] pt-[45px] text-[#000000] lg:pb-[5px] lg:pt-[90px]"
       >
         <div className="mx-auto">
           <div className="flex justify-center text-center text-[24px] font-bold -tracking-[2%] text-[#000000] lg:text-[33px] xl:text-[48px]">
@@ -140,7 +140,7 @@ const Hero5 = () => {
           </div>
         </div>
       </section>
-      <div className="absolute top-[1440px] left-0 right-0 z-50 mx-auto md:top-[1240px] lg:top-[1990px] xl:top-[2561px]">
+      <div className="">
         <img
           src={`${
             process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
