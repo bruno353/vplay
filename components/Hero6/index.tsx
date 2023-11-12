@@ -12,7 +12,7 @@ const Hero6 = () => {
           <div className="mx-auto mt-[20px] flex justify-center text-center text-[14px] font-medium -tracking-[2%] text-[#959595] lg:mt-[40px] lg:text-[19px] lg:!leading-[34px] xl:max-w-[1074px] xl:text-[28px]">
             If you are an individual or a team who have the expertise of data
             and Web3 infrastructure, we invite you to apply to become our
-            official OpenMesh Expert
+            official Openmesh Expert
           </div>
           <div className="mx-auto mt-[52px] max-w-[1200px] md:mt-[104px] md:flex">
             <div className="flex-1 md:mr-[70px]  lg:mr-[60px]">
