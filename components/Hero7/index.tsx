@@ -34,13 +34,13 @@ const Hero7 = () => {
     <>
       <section
         id="faqs"
-        className="relative z-10 border-b-[1px] border-[#D4D4D4] bg-white px-[20px] pb-[60px] pt-[50px] text-[#000000] lg:pb-[129px] lg:pt-[98px]"
+        className="relative z-10 border-b-[1px] border-[#D4D4D4] bg-white px-[200px] pb-[60px] pt-[50px] text-[#000000] lg:pb-[129px] lg:pt-[98px]"
       >
         <div className="mx-auto 2xl:w-[1359px]">
           <div className="text-[16px] font-bold lg:text-[22px] xl:text-[32px]">
             FAQs.{''}{' '}
             <span className="font-semibold text-[#959595]">
-              Frequenty Asked Questions2
+              Frequenty Asked Questions3
             </span>
           </div>
           <div className="mt-[23px] text-[11px] font-bold lg:mt-[47px] xl:text-[16px]">
