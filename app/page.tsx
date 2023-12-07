@@ -34,10 +34,8 @@ export default function Home() {
         <div>
           <img src={`/images/1.svg`} alt="image" className={`w-full`} />
         </div>
-        <div className="mx-auto justify-center pt-[160px] pb-[80px] text-center text-[48px]">
-          <div>Browse and Play from GameFi Insights</div>
-          <div>Search Coins, Tokens & NFT's In Natural Language</div>
-          <div>Buy/Sell/Trade Directly from Search Results</div>
+        <div>
+          <img src={`/images/text.svg`} alt="image" className={`w-full`} />
         </div>
         <div>
           <img src={`/images/2.png`} alt="image" className={`w-full`} />
