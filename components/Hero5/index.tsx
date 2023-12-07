@@ -100,7 +100,7 @@ const Hero5 = () => {
                   <li>
                     Principles of on-chain and off-chain data implementation
                   </li>
-                  <li>Core Openmesh Services: xNode, UnifiedAPI, and Pythia</li>
+                  <li>Core Openmesh Services: Xnode, UnifiedAPI, and Pythia</li>
                 </ul>
                 <div className="mt-[10px] text-[10px] font-medium lg:mt-[20px] lg:text-[14px] xl:text-[20px]">
                   We also provide virtual sessions with our engineers to dive
@@ -118,7 +118,7 @@ const Hero5 = () => {
                   />
                   <div className="mt-[10px] flex items-start">
                     <div className="text-[11px] font-bold lg:text-[16px]">
-                      What is xNode?
+                      What is Xnode?
                       <div className="text-[11px] font-medium text-[#959595] lg:text-[16px]">
                         Setup your node with just a few clicks instead of a few
                         months

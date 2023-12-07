@@ -46,7 +46,7 @@ const Hero2 = () => {
                 />
               </div>
               <div className="mt-[10px] text-[16px] font-bold lg:mt-[20px] lg:text-[23px] lg:!leading-[150%] xl:text-[32px]">
-                xNode <span className="font-medium text-[#959595]">(IaaS)</span>
+                Xnode <span className="font-medium text-[#959595]">(IaaS)</span>
               </div>
               <div className="mt-[10px] text-[10px] font-medium lg:mt-[20px] lg:text-[14px] xl:text-[20px]">
                 Tool to create a fully functional full-stack data infrastructure
