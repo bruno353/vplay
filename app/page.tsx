@@ -47,7 +47,7 @@ export default function Home() {
           <img src={`/images/5.svg`} alt="image" className={`w-full`} />
         </div>
         <div>
-          <img src={`/images/6.svg`} alt="image" className={`w-full`} />
+          <img src={`/images/7.svg`} alt="image" className={`w-full`} />
         </div>
       </section>
       {/* <Hero />
