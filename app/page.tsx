@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 'use client'
 
@@ -29,6 +30,28 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
+      <section className="bg-[#000] text-[#fff]">
+        <div>
+          <img src={`/images/vpl.png`} alt="image" className={`w-full`} />
+        </div>
+        <div className="mx-auto justify-center pt-[160px] pb-[80px] text-center text-[48px]">
+          <div>Browse and Play from GameFi Insights</div>
+          <div>Search Coins, Tokens & NFT's In Natural Language</div>
+          <div>Buy/Sell/Trade Directly from Search Results</div>
+        </div>
+        <div>
+          <img src={`/images/2.png`} alt="image" className={`w-full`} />
+        </div>
+        <div>
+          <img src={`/images/3.png`} alt="image" className={`w-full`} />
+        </div>
+        <div>
+          <img src={`/images/5.svg`} alt="image" className={`w-full`} />
+        </div>
+        <div>
+          <img src={`/images/6.svg`} alt="image" className={`w-full`} />
+        </div>
+      </section>
       {/* <Hero />
       <Hero2 />
       <RevealWrapper>

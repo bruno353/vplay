@@ -33,31 +33,31 @@ const Header = () => {
   }
 
   const features = [
-    {
-      label: 'About',
-      isCurrentlyPage: false,
-      href: `${process.env.NEXT_PUBLIC_BASE_URL}/oen/about`,
-    },
-    {
-      label: 'Expert community',
-      isCurrentlyPage: false,
-      href: `${process.env.NEXT_PUBLIC_BASE_URL}/oec`,
-    },
-    {
-      label: 'Academy',
-      isCurrentlyPage: false,
-      href: `${process.env.NEXT_PUBLIC_BASE_URL}/academy`,
-    },
     // {
-    //   label: 'Success Stories',
+    //   label: 'About',
     //   isCurrentlyPage: false,
-    //   href: `${process.env.NEXT_PUBLIC_BASE_URL}/community`,
+    //   href: `${process.env.NEXT_PUBLIC_BASE_URL}/oen/about`,
     // },
-    {
-      label: 'FAQs',
-      isCurrentlyPage: false,
-      href: `${process.env.NEXT_PUBLIC_BASE_URL}/oec/faqs`,
-    },
+    // {
+    //   label: 'Expert community',
+    //   isCurrentlyPage: false,
+    //   href: `${process.env.NEXT_PUBLIC_BASE_URL}/oec`,
+    // },
+    // {
+    //   label: 'Academy',
+    //   isCurrentlyPage: false,
+    //   href: `${process.env.NEXT_PUBLIC_BASE_URL}/academy`,
+    // },
+    // // {
+    // //   label: 'Success Stories',
+    // //   isCurrentlyPage: false,
+    // //   href: `${process.env.NEXT_PUBLIC_BASE_URL}/community`,
+    // // },
+    // {
+    //   label: 'FAQs',
+    //   isCurrentlyPage: false,
+    //   href: `${process.env.NEXT_PUBLIC_BASE_URL}/oec/faqs`,
+    // },
   ]
 
   return (
@@ -69,18 +69,10 @@ const Header = () => {
           </span>
         </div>
       </Link> */}
-      <header className="max-w-screen top-0 left-0 z-40 mx-0 flex h-[95px] w-full  items-center bg-[#F9F9F9]  bg-opacity-80 text-[#000000]">
+      <header className="max-w-screen top-0 left-0 z-40 mx-0 flex h-[95px] w-full  items-center bg-[#fff]  bg-opacity-80 text-[#000000]">
         <div className="w-full justify-between px-[20px] md:px-[90px] xl:hidden">
           <div className="">
-            <img
-              src={`${
-                process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
-                  ? process.env.NEXT_PUBLIC_BASE_PATH
-                  : ''
-              }/images/new/openmesh-network-logo.png`}
-              alt="image"
-              className={`w-[150px]`}
-            />
+            <img src={`/images/vplay.png`} alt="image" className={`w-[98px]`} />
           </div>
           <button
             onClick={navbarToggleHandler}
@@ -217,15 +209,7 @@ const Header = () => {
         </div>
         <div className="hidden h-full w-full items-center justify-between px-[70px] xl:flex">
           <div className="flex  h-full items-center">
-            <img
-              src={`${
-                process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
-                  ? process.env.NEXT_PUBLIC_BASE_PATH
-                  : ''
-              }/images/new/openmesh-network-logo.png`}
-              alt="image"
-              className={`mr-[60px] w-[200px]`}
-            />
+            <img src={`/images/vplay.png`} alt="image" className={`w-[98px]`} />
             <div className="flex h-full items-center gap-x-[1px] text-[14px] font-medium !leading-[19px] 2xl:gap-x-[20px] 2xl:text-[16px]">
               {features.map((feature, index) => (
                 <div className="flex h-full items-center" key={index}>
@@ -241,13 +225,13 @@ const Header = () => {
               ))}
             </div>
           </div>
-          <div className={` flex justify-between `}>
-            <a
-              href={`/oec/register`}
-              className="flex cursor-pointer items-center rounded-[5px] border border-[#0354EC] bg-transparent  py-[9px] px-[18px] text-[14px] font-bold !leading-[19px] text-[#0354EC] hover:bg-[#0354EC] hover:text-[#fff] 2xl:py-[11.5px] 2xl:px-[24px] 2xl:text-[16px]"
-            >
-              Become an expert
-            </a>
+          <div
+            className={` flex items-center justify-between gap-x-[32px] text-center text-[14px] font-medium`}
+          >
+            <div className=" text-[#3C3C3C]">Contact</div>
+            <div className="cursor-pointer rounded-[10px] bg-[#000] px-[24px] py-[8px] text-[#fff]">
+              Contribute
+            </div>
             {/* {user?.sessionToken ? (
               <div>
                 <img
