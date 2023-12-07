@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
-      <Hero />
+      {/* <Hero />
       <Hero2 />
       <RevealWrapper>
         <Hero3 />
@@ -45,7 +45,7 @@ export default function Home() {
       </RevealWrapper>
       <RevealWrapper>
         <Hero7 />
-      </RevealWrapper>
+      </RevealWrapper> */}
       {/*
       <RevealWrapper>
         <Techs />
