@@ -7,7 +7,7 @@ const Hero2 = () => {
       >
         <div className="mx-auto xl:w-[1000px]">
           <div className="flex justify-center text-[22px] font-bold -tracking-[2.2%] lg:text-[33px] lg:!leading-[150%] xl:text-[48px]">
-            Why choose OpenMesh?
+            Why choose Openmesh?
           </div>
           <div className="mt-[15px] flex justify-center text-[14px] font-medium -tracking-[2%] lg:mt-[30px] lg:text-center lg:text-[20px] lg:!leading-[44px] xl:text-[28px]">
             Openmesh is the leading open-source data protocol that helps
