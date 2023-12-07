@@ -228,10 +228,22 @@ const Header = () => {
           <div
             className={` flex items-center justify-between gap-x-[32px] text-center text-[14px] font-medium`}
           >
-            <div className=" text-[#3C3C3C]">Contact</div>
-            <div className="cursor-pointer rounded-[10px] bg-[#000] px-[24px] py-[8px] text-[#fff]">
-              Contribute
-            </div>
+            <a
+              href="https://kl7t3uvvz1s.typeform.com/to/lSAC6DH4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className=" text-[#3C3C3C]">Contact</div>
+            </a>
+            <a
+              href="https://kl7t3uvvz1s.typeform.com/to/lSAC6DH4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="cursor-pointer rounded-[10px] bg-[#000] px-[24px] py-[8px] text-[#fff]">
+                Contribute
+              </div>
+            </a>
             {/* {user?.sessionToken ? (
               <div>
                 <img
