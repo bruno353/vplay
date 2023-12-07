@@ -32,7 +32,7 @@ export default function Home() {
       <ScrollUp />
       <section className="bg-[#000] text-[#fff]">
         <div>
-          <img src={`/images/vpl.png`} alt="image" className={`w-full`} />
+          <img src={`/images/1.svg`} alt="image" className={`w-full`} />
         </div>
         <div className="mx-auto justify-center pt-[160px] pb-[80px] text-center text-[48px]">
           <div>Browse and Play from GameFi Insights</div>
@@ -43,7 +43,7 @@ export default function Home() {
           <img src={`/images/2.png`} alt="image" className={`w-full`} />
         </div>
         <div>
-          <img src={`/images/3.png`} alt="image" className={`w-full`} />
+          <img src={`/images/3.svg`} alt="image" className={`w-full`} />
         </div>
         <div>
           <img src={`/images/5.svg`} alt="image" className={`w-full`} />
