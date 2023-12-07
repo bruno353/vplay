@@ -64,7 +64,7 @@ const Hero5 = () => {
                 </div>
                 <div className="mt-[10px] text-[10px] font-medium lg:mt-[20px] lg:text-[14px] xl:text-[20px]">
                   To earn the official certification badge, you will be assessed
-                  for OpenMesh proficiencies.
+                  for Openmesh proficiencies.
                 </div>
                 <div className="mt-[10px] text-[10px] font-bold lg:mt-[20px] lg:text-[14px] xl:text-[20px]">
                   Once passed, you will receive a certification badge, recorded
@@ -100,7 +100,7 @@ const Hero5 = () => {
                   <li>
                     Principles of on-chain and off-chain data implementation
                   </li>
-                  <li>Core OpenMesh Services: xNode, UnifiedAPI, and Pythia</li>
+                  <li>Core Openmesh Services: xNode, UnifiedAPI, and Pythia</li>
                 </ul>
                 <div className="mt-[10px] text-[10px] font-medium lg:mt-[20px] lg:text-[14px] xl:text-[20px]">
                   We also provide virtual sessions with our engineers to dive
