@@ -119,7 +119,7 @@ const Header = () => {
                 </div>
               ))}
             </div>
-            <div className="mt-[35px]">
+            {/* <div className="mt-[35px]">
               <div>
                 {' '}
                 <a
@@ -204,7 +204,7 @@ const Header = () => {
                   </a>
                 </div>
               )} */}
-            </div>
+            {/* </div> */}
           </nav>
         </div>
         <div className="mx-auto hidden h-full w-full max-w-[1300px] items-center justify-between px-[50px] xl:flex">
@@ -235,7 +235,7 @@ const Header = () => {
             >
               <div className=" text-[#3C3C3C]">Contact</div>
             </a>
-            <a
+            {/* <a
               href="https://kl7t3uvvz1s.typeform.com/to/lSAC6DH4"
               target="_blank"
               rel="noreferrer"
@@ -243,7 +243,7 @@ const Header = () => {
               <div className="cursor-pointer rounded-[10px] bg-[#000] px-[24px] py-[8px] text-[#fff]">
                 Contribute
               </div>
-            </a>
+            </a> */}
             {/* {user?.sessionToken ? (
               <div>
                 <img
