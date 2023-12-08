@@ -233,7 +233,7 @@ const Header = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className=" text-[#3C3C3C]">Contact</div>
+              <div className="text-[#3C3C3C] hover:text-[#1f1f1f]">Contact</div>
             </a>
             {/* <a
               href="https://kl7t3uvvz1s.typeform.com/to/lSAC6DH4"
